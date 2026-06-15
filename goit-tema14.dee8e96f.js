@@ -1,0 +1,2 @@
+function e(e,o){return new Promise((n,t)=>{setTimeout(()=>{n(e)},o)})}let o=e=>console.log(`Resolved after ${e}ms`);function n(e){let o=4e3*Math.random()+1e3;return new Promise((n,t)=>{setTimeout(()=>{n(e)},o)})}e(100,30).then(o),e(200,50).then(o),e(1e3,100).then(o),Promise.all([e(10,1e3),e(20,2e3),e(30,3e3),e(40,4e3),e(50,5e3)]).then(e=>{console.log(e)}),Promise.race([n(456),n(654),n(43),n(876),n(465)]).then(e=>{console.log(e)});
+//# sourceMappingURL=goit-tema14.dee8e96f.js.map
